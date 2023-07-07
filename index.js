@@ -8,7 +8,7 @@ function Book(title, author, pages, read) {
     }
 }  
 
-const book1 = new Book('Deep Trouble', 'R.L. Stine', 117, read)
+const deepTrouble = new Book('Deep Trouble', 'R.L. Stine', 117, read)
 
 
 console.log(deepTrouble.info());
