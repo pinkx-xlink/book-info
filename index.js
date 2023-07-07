@@ -3,7 +3,7 @@ function Book(title, author, pages, read) {
     this.author = author 
     this.pages = pages
     this.read = read
-    this.sayBook = function() {
+    this.info = function() {
         console.log(Book)
     }
 }  
@@ -11,4 +11,4 @@ function Book(title, author, pages, read) {
 const book1 = new Book('Deep Trouble', 'R.L. Stine', 117, read)
 
 
-book1.sayBook()
+console.log(deepTrouble.info());
