@@ -10,9 +10,11 @@ function Book(title, author, pages, read) {
     }
 }  
 
+const book1 = new Book("dodo", "me", 805, "read")
+
 function addBookToLibrary(){
-    let Book = document.createElement("item");
-    document.body.appendChild("item");
+    Book = document.createElement("item")
+    document.body.appendChild("item")
     // do stuff here
 }
 
