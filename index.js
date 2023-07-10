@@ -14,10 +14,10 @@ function addBookToLibrary(){
     // do stuff here
 }
 
-const deepTrouble = new Book('Deep Trouble', 'R.L. Stine', 117, read)
+// const book1 = new Book('Deep Trouble', 'R.L. Stine', 117, 'read')
 
 
-console.log(deepTrouble.info());
+//console.log(deepTrouble.info());
 
 
 
