@@ -11,7 +11,7 @@ function Book(title, author, pages, read) {
 }  
 
 function addBookToLibrary(){
-    // the constructor...
+    // do stuff here
 }
 
 const deepTrouble = new Book('Deep Trouble', 'R.L. Stine', 117, read)
