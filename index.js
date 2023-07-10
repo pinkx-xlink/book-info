@@ -11,13 +11,12 @@ function Book(title, author, pages, read) {
 }  
 
 function addBookToLibrary(){
-    
+    document.getElementsByClassName("new-book")
     // do stuff here
 }
 
+
 // const book1 = new Book('Deep Trouble', 'R.L. Stine', 117, 'read')
-
-
 //console.log(deepTrouble.info());
 
 
