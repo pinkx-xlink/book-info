@@ -11,8 +11,8 @@ function Book(title, author, pages, read) {
 }  
 
 function addBookToLibrary(){
-    document.createElementById("item")
-    
+    let Book = document.createElement("item");
+    document.body.appendChild("item");
     // do stuff here
 }
 
