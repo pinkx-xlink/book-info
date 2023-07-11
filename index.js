@@ -5,9 +5,9 @@ function Book(title, author, pages, read) {
     this.author = author;
     this.pages = pages;
     this.read = read;
-    this.info = function() {
-        console.log(Book)
-    }
+    //this.info = function() {
+    //    console.log(Book)
+    //}
 }  
 
 function render() {
