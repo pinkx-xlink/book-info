@@ -27,7 +27,7 @@ function addBookToLibrary(){
     myLibrary.push(newBook);
     render();
     // do stuff here
-}
+} 15.34
 
 let newBookbtn = document.querySelector("#new-book-btn");
 newBookbtn.addEventListener("click", function() {
