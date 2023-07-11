@@ -19,6 +19,7 @@ function addBookToLibrary(){
     let read = document.getElementById("read").checked;
     let newBook = new Book(title, author, pages, read);
     console.log(newBook);
+    myLibrary.push(newBook);
     // do stuff here
 }
 
