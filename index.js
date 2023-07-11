@@ -22,6 +22,13 @@ function addBookToLibrary(){
     // do stuff here
 }
 
+let newBookbtn = document.querySelector("#new-book-btn");
+newBookbtn.addEventListener("click", function() {
+    let newBookForm = document.querySelector("#new-book-form");
+    newBookForm.style.display = "block";
+})
+
+
 
 // const book1 = new Book('Deep Trouble', 'R.L. Stine', 117, 'read')
 //console.log(deepTrouble.info());
