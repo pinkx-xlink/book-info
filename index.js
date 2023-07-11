@@ -28,7 +28,7 @@ newBookbtn.addEventListener("click", function() {
     newBookForm.style.display = "block";
 })
 
-
+document.querySelector("#new-book-form")
 
 // const book1 = new Book('Deep Trouble', 'R.L. Stine', 117, 'read')
 //console.log(deepTrouble.info());
