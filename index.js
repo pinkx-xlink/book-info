@@ -10,6 +10,10 @@ function Book(title, author, pages, read) {
     //}
 }  
 
+Book.prototype.toggleRead = function() {
+    this.read = !this.read;
+}
+
 function render() {
     let libraryElement = document.querySelector("#library");
     libraryElement.innerHTML = "";
