@@ -10,7 +10,12 @@ function Book(title, author, pages, read) {
     }
 }  
 
-
+function render() {
+    let libraryBook = document.querySelector("library");
+    for (let i = 0; i < myLibrary.length; i++) {
+        console.log(myLibrary[i]);
+    }
+}
 
 function addBookToLibrary(){
     let title = document.querySelector("#title").value; //maybe remove #?
@@ -20,7 +25,7 @@ function addBookToLibrary(){
     let newBook = new Book(title, author, pages, read);
     console.log(newBook);
     myLibrary.push(newBook);
-    console.log(myLibrary);
+    render();
     // do stuff here
 }
 
