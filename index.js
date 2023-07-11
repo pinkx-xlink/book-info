@@ -13,7 +13,11 @@ function Book(title, author, pages, read) {
 
 
 function addBookToLibrary(){
-    
+    let title = document.querySelector("#title").value;
+    let author = document.getElementById("author").value;
+    let pages = document.getElementById("pages").value;
+    let read = document.getElementById("read").checked;
+    console.log(newBook);
     // do stuff here
 }
 
