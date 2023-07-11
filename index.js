@@ -11,9 +11,12 @@ function Book(title, author, pages, read) {
 }  
 
 function render() {
-    let libraryBook = document.querySelector("library");
+    let libraryElement = document.querySelector("library");
     for (let i = 0; i < myLibrary.length; i++) {
-        console.log(myLibrary[i]);
+        let book = myLibrary[i];
+        let.bookElement = document.createElement("div");
+        bookElement.innerHTML = `<p>${book.title}</p>`
+        libraryElement
     }
 }
 
@@ -27,7 +30,7 @@ function addBookToLibrary(){
     myLibrary.push(newBook);
     render();
     // do stuff here
-} 15.34
+}
 
 let newBookbtn = document.querySelector("#new-book-btn");
 newBookbtn.addEventListener("click", function() {
