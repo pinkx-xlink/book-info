@@ -17,6 +17,7 @@ function addBookToLibrary(){
     let author = document.getElementById("author").value;
     let pages = document.getElementById("pages").value;
     let read = document.getElementById("read").checked;
+    let newBook = new Book(title, author, pages, read);
     console.log(newBook);
     // do stuff here
 }
