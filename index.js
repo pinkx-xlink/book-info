@@ -29,6 +29,7 @@ newBookbtn.addEventListener("click", function() {
 })
 
 document.querySelector("#new-book-form"). addEventListener("submit", function() {
+    event.preventDefault();
     alert("HELL!");
 })
 
