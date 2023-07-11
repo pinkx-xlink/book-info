@@ -20,3 +20,14 @@ button {
     border-bottom:3px solid rgb(23, 5, 31);
     box-shadow: 10px 5px 5px rgb(1, 87, 87);
 }
+
+#new-book-form {
+    display:flex;
+    margin:25px;
+    height: 400px;
+    width:250px;
+    border-radius:30px;
+    border-bottom:3px solid rgb(23, 5, 31);
+    box-shadow: 10px 5px 5px rgb(1, 87, 87);
+    background-color: blue;
+}
