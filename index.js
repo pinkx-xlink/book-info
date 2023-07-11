@@ -30,7 +30,7 @@ newBookbtn.addEventListener("click", function() {
 
 document.querySelector("#new-book-form"). addEventListener("submit", function() {
     event.preventDefault();
-    alert("HELL!");
+    addBookToLibrary();
 })
 
 // const book1 = new Book('Deep Trouble', 'R.L. Stine', 117, 'read')
