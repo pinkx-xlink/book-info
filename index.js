@@ -31,6 +31,12 @@ function render() {
     }
 }
 
+function removeBook(index) {
+    myLibrary.splice(index, 1);
+    render();
+}
+
+
 function addBookToLibrary(){
     let title = document.querySelector("#title").value; //maybe remove #?
     let author = document.getElementById("author").value;
