@@ -1,8 +1,10 @@
 * {
     background-color: rgb(167, 197, 171);
 }
-body{
+
+.content {
     display: flex;
+    flex-direction: row;
 }
 
 h1{
