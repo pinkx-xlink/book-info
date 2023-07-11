@@ -23,12 +23,9 @@ function render() {
             </div>
             <div class="card-body">
                 <p>${book.pages} pages</p>
-                <p class="read-status">${book read ? "Read" : "Not Read Yet ): }</p>
+                <p class="read-status">${book.read ? "Read" : "Not Read Yet"}</p>
             </div>
         `;
-        bookElement.innerHTML = `<p>${book.title}</p>`
-        bookElement.innerHTML = `<p>${book.author}</p>`
-        bookElement.innerHTML = `<p>${book.pages}</p>`
         libraryElement.appendChild(bookElement);
     }
 }
