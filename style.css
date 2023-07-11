@@ -1,6 +1,9 @@
 * {
     background-color: rgb(167, 197, 171);
 }
+body{
+    display: flex;
+}
 
 h1{
     background-color:aliceblue;
