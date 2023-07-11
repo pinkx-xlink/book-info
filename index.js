@@ -16,7 +16,7 @@ function render() {
     for (let i = 0; i < myLibrary.length; i++) {
         let book = myLibrary[i];
         let bookElement = document.createElement("div");
-        bookElement.innerHTML =
+        bookElement.innerHTML = `
             <div class="card-header">
                 <h3 class="title">${book.title}</h3>
                 <h5 class="author">by: ${book.author}</h5>
@@ -25,6 +25,7 @@ function render() {
                 <p>${book.pages} pages</p>
                 <p class="read-status">${book read ? "Read" : "Not Read Yet ): }</p>
             </div>
+        `;
         bookElement.innerHTML = `<p>${book.title}</p>`
         bookElement.innerHTML = `<p>${book.author}</p>`
         bookElement.innerHTML = `<p>${book.pages}</p>`
