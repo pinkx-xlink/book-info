@@ -20,6 +20,7 @@ function addBookToLibrary(){
     let newBook = new Book(title, author, pages, read);
     console.log(newBook);
     myLibrary.push(newBook);
+    console.log(myLibrary);
     // do stuff here
 }
 
