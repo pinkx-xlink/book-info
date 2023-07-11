@@ -14,9 +14,9 @@ function render() {
     let libraryElement = document.querySelector("library");
     for (let i = 0; i < myLibrary.length; i++) {
         let book = myLibrary[i];
-        let.bookElement = document.createElement("div");
+        let bookElement = document.createElement("div");
         bookElement.innerHTML = `<p>${book.title}</p>`
-        libraryElement
+        libraryElement.appendChild(bookElement);
     }
 }
 
