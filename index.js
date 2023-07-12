@@ -27,11 +27,10 @@ function render() {
         let bookElement = document.createElement("div");
         bookElement.setAttribute("class", "book-card");
         bookElement.innerHTML = `
-            <div class="card-header">
+            <div class="card">
                 <h3 class="title">${book.title}</h3>
                 <h5 class="author">by: ${book.author}</h5>
-            </div>
-            <div class="card-body">
+            
                 <p>${book.pages} pages</p> 
                 <p class="read-status">${book.read ? "Read" : "Not Read Yet"}</p>
                 <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
