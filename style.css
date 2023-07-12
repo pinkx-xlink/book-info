@@ -26,8 +26,8 @@ h1{
     box-shadow: 10px 5px 5px rgb(1, 87, 87);
 }
 
+
 #new-book-form {
-    display:flex;
     margin:25px;
     height: 400px;
     width:250px;
@@ -39,7 +39,10 @@ h1{
 }
 
 .book-card {
+    margin:25px;
+    height: 400px;
+    width:250px;
     border-radius:30px;
     border: 3px solid gray;
-    padding:10px;
+    
 }
