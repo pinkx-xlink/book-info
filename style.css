@@ -1,5 +1,6 @@
 * {
     background-color: rgb(167, 197, 171);
+    display: flex;
 }
 
 .content {
