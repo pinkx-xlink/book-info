@@ -1,6 +1,6 @@
-let myLibrary = [];
+class myLibrary = [];
 
-function Book(title, author, pages, read) {
+constructor Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -14,12 +14,12 @@ Book.prototype.toggleRead = function() {
     this.read = !this.read;
 }
 
-function toggleRead(index) {
+toggleRead(index) {
     myLibrary[index].toggleRead();
     render()
 }
 
-function render() {
+render() {
     let libraryElement = document.querySelector("#library");
     libraryElement.innerHTML = "";
     for (let i = 0; i < myLibrary.length; i++) {
@@ -41,13 +41,13 @@ function render() {
     }
 }
 
-function removeBook(index) {
+removeBook(index) {
     myLibrary.splice(index, 1);
     render();
 }
 
 
-function addBookToLibrary(){
+addBookToLibrary(){
     let title = document.querySelector("#title").value; //maybe remove #?
     let author = document.getElementById("author").value;
     let pages = document.getElementById("pages").value;
