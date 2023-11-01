@@ -26,6 +26,9 @@ function render() {
     let book = myLibrary[i];
     let bookElement = document.createElement("div");
     bookElement.setAttribute("class", "book-card");
+
+
+    // NEED TO APPEND THE INPUT AS NEW DIVS (MAKE THEM STAY WHEN PRESSING "ADD BOOK" BTN)
     bookElement.innerHTML = `
             <div class="card">
             <label for="title">Title: </label>
@@ -42,7 +45,7 @@ function render() {
             </div>
         `;
     libraryElement.appendChild(bookElement);
-  }
+  } 
 }
 
 function removeBook(index) {
