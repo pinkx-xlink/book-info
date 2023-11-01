@@ -28,13 +28,17 @@ function render() {
     bookElement.setAttribute("class", "book-card");
     bookElement.innerHTML = `
             <div class="card">
-                <h3 class="title">${book.title}</h3>
-                <h5 class="author">by: ${book.author}</h5>
+            <label for="title">Title: </label>
+            <input type="text" id="title">
+            <label for="author">Author: </label>
+            <input type="text" id="author">
+            <label for="pages">Pages: </label>
+            <input type="text" id="pages">
+    
+            <label for="read">Read: </label>
+            <input type="checkbox" id="read">
             
-                <p>${book.pages} pages</p> 
-                <p class="read-status">${book.read ? "Read" : "Not Read Yet"}</p>
-                <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
-                <button class="toggle-read-btn" onclick="toggleRead(${i})">Toggle Read</button>
+            <input type="submit" value="Add Book"> 
             </div>
         `;
     libraryElement.appendChild(bookElement);
@@ -45,7 +49,6 @@ function removeBook(index) {
   myLibrary.splice(index, 1);
   render();
 }
-
 
 function addBookToLibrary(){
   let title = document.querySelector("#title").value; //maybe remove #?
