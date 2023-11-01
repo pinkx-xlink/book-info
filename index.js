@@ -40,7 +40,7 @@ function render() {
     
             <label for="read">Read: </label>
             <input type="checkbox" id="read">
-            
+            <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
             <input type="submit" value="Add Book"> 
             </div>
         `;
