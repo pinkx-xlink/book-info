@@ -48,6 +48,10 @@ function render() {
   } 
 }
 
+function addBook() {
+    
+}
+
 function removeBook(index) {
   myLibrary.splice(index, 1);
   render();
