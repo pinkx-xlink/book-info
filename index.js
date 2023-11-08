@@ -23,7 +23,7 @@ function render() {
   let libraryElement = document.querySelector("#library");
   libraryElement.innerHTML = "";
   for (let i = 0; i < myLibrary.length; i++) {
-    let book = myLibrary[i];
+    let Book = myLibrary[i];
     let bookElement = document.createElement("div");
     bookElement.setAttribute("class", "book-card");
 
@@ -58,7 +58,7 @@ function removeBook(index) {
 }
 
 function addBookToLibrary(){
-  let title = document.querySelector("#title").value; //maybe remove #?
+  let title = document.querySelector("title").value; //maybe remove #?
   let author = document.getElementById("author").value;
   let pages = document.getElementById("pages").value;
   let read = document.getElementById("read").checked;
