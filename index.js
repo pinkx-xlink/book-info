@@ -48,10 +48,10 @@ function render() {
   } 
 }
 
-addBook.prototype.Book = function() {
-    myLibrary.appendChild(index, 2);
-    render();
-}
+// addBook.prototype.Book = function() {
+//     myLibrary.appendChild(index, 2);
+//     render();
+// }
 
 function removeBook(index) {
   myLibrary.splice(index, 1);
