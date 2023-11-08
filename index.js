@@ -48,8 +48,8 @@ function render() {
   } 
 }
 
-function addBook(index) {
-    myLibrary.appendChild(index, 1);
+addBook.prototype.Book = function() {
+    myLibrary.appendChild(index, 2);
     render();
 }
 
