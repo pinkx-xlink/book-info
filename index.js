@@ -48,8 +48,9 @@ function render() {
   } 
 }
 
-function addBook() {
-    
+function addBook(index) {
+    myLibrary.appendChild(index, 1);
+    render();
 }
 
 function removeBook(index) {
