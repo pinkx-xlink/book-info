@@ -81,11 +81,17 @@ document.getElementById("#new-book-form").addEventListener("submit", function(ev
   addBookToLibrary();
 })
 
+
+// troubleshooting savebookbtn!!
+
 let saveBookBtn = document.querySelector("#save-book-btn");
 saveBookBtn.addEventListener("click", function() {
   let = document.querySelector("# ");
   .style.display = "block";
 })
+
+
+
 
 // const book1 = new Book('Deep Trouble', 'R.L. Stine', 117, 'read')
 //console.log(deepTrouble.info());
