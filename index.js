@@ -86,8 +86,8 @@ document.getElementById("#new-book-form").addEventListener("submit", function(ev
 
 let saveBookBtn = document.querySelector("#save-book-btn");
 saveBookBtn.addEventListener("click", function() {
-  let = document.querySelector("# ");
-  .style.display = "block";
+  let bookElement = document.querySelector(bookElement);
+  bookElement.style.display = "block";
 })
 
 
