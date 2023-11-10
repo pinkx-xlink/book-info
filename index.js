@@ -84,12 +84,6 @@ document.getElementById("#new-book-form").addEventListener("submit", function(ev
 
 // troubleshooting savebookbtn!!
 
-let saveBookBtn = document.querySelector("#save-book-btn");
-saveBookBtn.addEventListener("click", function() {
-  let bookElement = document.querySelector(bookElement);
-  bookElement.style.display = "block";
-})
-
 
 
 
