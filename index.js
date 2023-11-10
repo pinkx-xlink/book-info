@@ -86,7 +86,27 @@ document.getElementById("#new-book-form").addEventListener("submit", function(ev
 function saveBook(Book) {
   const bookContainer = document.querySelector("#bookContainer");
   //add book to grid
-  
+  let div = document.createElement("div");
+  let hasRead = "";
+  let clr = "";
+  if(book.read) {
+    hasRead = "read";
+    clr = "green";
+  } else {
+    hasRead = "not read";
+    clr = "red";
+  }
+  div.setAttribute("data-num", counter);
+  div.innerHTML = 
+  <p class="BookTitle">"${book.title}"</p>
+  <p class="BookPages">${book.author}</p>
+  <p class="BookPages">${book.pages}</p>
+
+  bookContainer.appendChild(div);
+  book.dataNum = `${counter}`;
+
+  counter++;
+  console.log(book);
 }
 
 
