@@ -95,7 +95,7 @@ function saveBook(Book) {
   } else {
     hasRead = "not read";
     clr = "red";
-  }
+  } 
   div.setAttribute("data-num", counter);
   div.innerHTML = 
   <p class="BookTitle">"${book.title}"</p>
@@ -108,6 +108,8 @@ function saveBook(Book) {
   counter++;
   console.log(book);
 }
+
+
 
 
 
