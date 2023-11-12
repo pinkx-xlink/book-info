@@ -72,15 +72,16 @@ function addBookToLibrary(){
 
 //function to SAVE BOOK to library
 function saveBookToLibrary(){
-  let title = document.querySelector("title").value; //maybe remove #?
-  let author = document.getElementById("author").value;
-  let pages = document.getElementById("pages").value;
+  let title = this.("${book.title}"); //maybe remove #?
+  let author = this.("${book.author}");
+  let pages = this.("$book.pages}");
   let read = document.getElementById("read").checked;
-  let newBook = new Book(title, author, pages, read);
-  console.log(newBook);
-  myLibrary.push(newBook);
+  
+  console.log(saveBookToLibrary);
+  myLibrary.push(saveBookToLibrary);
   render();
-  // do stuff here
+  // do stuff here;/'
+  |7
 
   bookInfo.innerHTML = `
             <div class="card">
@@ -96,6 +97,9 @@ function saveBookToLibrary(){
             <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
             <input type="submit" id="save-book" onclick="saveBookToLibrary"> 
             </div>
+            <p class="BookTitle"></p>
+            <p class="BookPages">${book.author}</p>
+            <p class="BookPages">${book.pages}</p>
         `;
     libraryElement.appendChild(bookInfo);
 }
