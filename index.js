@@ -62,9 +62,6 @@ function removeBook(index) {
   myLibrary.splice(index, 1);
   render();
 }
-
-
-
 //function to SAVE BOOK to library
 
 let newBookBtn = document.getElementById("new-book-btn");
