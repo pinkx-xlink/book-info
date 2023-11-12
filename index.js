@@ -71,39 +71,6 @@ function addBookToLibrary(){
 }
 
 //function to SAVE BOOK to library
-function saveBookToLibrary(){
-  let title = this.("${book.title}"); //maybe remove #?
-  let author = this.("${book.author}");
-  let pages = this.("$book.pages}");
-  let read = document.getElementById("read").checked;
-  
-  console.log(saveBookToLibrary);
-  myLibrary.push(saveBookToLibrary);
-  render();
-  // do stuff here;/'
-  |7
-
-  bookInfo.innerHTML = `
-            <div class="card">
-            <label for="title">Title: </label>
-            <input type="text" id="title">
-            <label for="author">Author: </label>
-            <input type="text" id="author">
-            <label for="pages">Pages: </label>
-            <input type="text" id="pages">
-    
-            <label for="read">Read: </label>
-            <input type="checkbox" id="read">
-            <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
-            <input type="submit" id="save-book" onclick="saveBookToLibrary"> 
-            </div>
-            <p class="BookTitle"></p>
-            <p class="BookPages">${book.author}</p>
-            <p class="BookPages">${book.pages}</p>
-        `;
-    libraryElement.appendChild(bookInfo);
-}
-
 
 let newBookBtn = document.querySelector("#new-book-btn");
 newBookbtn.addEventListener("click", function() {
