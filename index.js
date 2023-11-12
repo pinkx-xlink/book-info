@@ -67,14 +67,14 @@ function removeBook(index) {
 
 //function to SAVE BOOK to library
 
-let newBookBtn = document.querySelector("#new-book-btn");
+let newBookBtn = document.getElementById("new-book-btn");
 newBookbtn.addEventListener("click", function() {
-  let newBookForm = document.querySelector("#new-book-form");
+  let newBookForm = document.getElementById("new-book-form");
   newBookForm.style.display = "block";
 })
 
-document.getElementById("#new-book-form").addEventListener("submit", function(event) {
-  event.preventDefault();
+document.getElementById("new-book-form").addEventListener("submit", function(event) {
+  e.preventDefault();
   addBookToLibrary();
 })
 
