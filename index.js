@@ -70,6 +70,37 @@ function addBookToLibrary(){
   // do stuff here
 }
 
+//function to SAVE BOOK to library
+function saveBookToLibrary(){
+  let title = document.querySelector("title").value; //maybe remove #?
+  let author = document.getElementById("author").value;
+  let pages = document.getElementById("pages").value;
+  let read = document.getElementById("read").checked;
+  let newBook = new Book(title, author, pages, read);
+  console.log(newBook);
+  myLibrary.push(newBook);
+  render();
+  // do stuff here
+
+  bookInfo.innerHTML = `
+            <div class="card">
+            <label for="title">Title: </label>
+            <input type="text" id="title">
+            <label for="author">Author: </label>
+            <input type="text" id="author">
+            <label for="pages">Pages: </label>
+            <input type="text" id="pages">
+    
+            <label for="read">Read: </label>
+            <input type="checkbox" id="read">
+            <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
+            <input type="submit" id="save-book" onclick="saveBookToLibrary"> 
+            </div>
+        `;
+    libraryElement.appendChild(bookInfo);
+}
+
+
 let newBookBtn = document.querySelector("#new-book-btn");
 newBookbtn.addEventListener("click", function() {
   let newBookForm = document.querySelector("#new-book-form");
