@@ -19,15 +19,25 @@ function toggleRead(index) {
   render()
 }
 
+function addBookToLibrary(){
+  let title = document.getElementById("title").value; //maybe remove #?
+  let author = document.getElementById("author").value;
+  let pages = document.getElementById("pages").value;
+  let read = document.getElementById("read").checked;
+  let newBook = new Book(title, author, pages, read);
+  console.log(newBook);
+  myLibrary.push(newBook);
+  render();
+  // do stuff here
+}
+
 function render() {
-  let libraryElement = document.querySelector("#library");
+  let libraryElement = document.getElementById("#library");
   libraryElement.innerHTML = "";
   for (let i = 0; i < myLibrary.length; i++) {
     let Book = myLibrary[i];
     let bookElement = document.createElement("div");
     bookElement.setAttribute("class", "book-card");
-
-
     // NEED TO APPEND THE INPUT AS NEW DIVS (MAKE THEM STAY WHEN PRESSING "ADD BOOK" BTN)
     bookElement.innerHTML = `
             <div class="card">
@@ -58,17 +68,7 @@ function removeBook(index) {
   render();
 }
 
-function addBookToLibrary(){
-  let title = document.querySelector("title").value; //maybe remove #?
-  let author = document.getElementById("author").value;
-  let pages = document.getElementById("pages").value;
-  let read = document.getElementById("read").checked;
-  let newBook = new Book(title, author, pages, read);
-  console.log(newBook);
-  myLibrary.push(newBook);
-  render();
-  // do stuff here
-}
+
 
 //function to SAVE BOOK to library
 
