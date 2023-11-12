@@ -32,7 +32,7 @@ function addBookToLibrary(){
 }
 
 function render() {
-  let libraryElement = document.getElementById("#library");
+  let libraryElement = document.getElementById("library");
   libraryElement.innerHTML = "";
   for (let i = 0; i < myLibrary.length; i++) {
     let Book = myLibrary[i];
@@ -41,7 +41,12 @@ function render() {
     // NEED TO APPEND THE INPUT AS NEW DIVS (MAKE THEM STAY WHEN PRESSING "ADD BOOK" BTN)
     bookElement.innerHTML = `
             <div class="card-header">
-            
+              <h3 class="title">${book.title}</h3>
+              <h5 class="author">by ${book.author}</h5>
+            </div>
+            <div class="card-body">
+              <p>${book.pages}</p>
+              // read
             </div>
         `;
     libraryElement.appendChild(bookElement);
