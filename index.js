@@ -40,15 +40,6 @@ function render() {
     bookElement.setAttribute("class", "book-card");
     // NEED TO APPEND THE INPUT AS NEW DIVS (MAKE THEM STAY WHEN PRESSING "ADD BOOK" BTN)
     bookElement.innerHTML = `
-            // <div class="card-header">
-            //   <h3 class="title">${book.title}</h3>
-            //   <h5 class="author">by ${book.author}</h5>
-            // </div>
-            // <div class="card-body">
-            //   <p>${book.pages}</p>
-              
-            // </div>
-
               <label for="title">Title: </label>
               <input type="text" id="title">
               <label for="author">Author: </label>
@@ -57,8 +48,7 @@ function render() {
               <input type="text" id="pages">
               <label for="read">Read: </label>
               <input type="checkbox" id="read">
-              <input type="submit" value="Add Book">    
-           
+              <input type="submit" value="Add Book">   
         `;
     libraryElement.appendChild(bookElement);
   } 
